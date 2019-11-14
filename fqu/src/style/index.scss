@@ -1,60 +1,74 @@
 @import './public';
-body{
+@import './header';
+@import './foot';
+
+body {
     background: white;
 }
+
 /*我也不知道干嘛用的*/
-.nouse{
+.nouse {
     margin: 0 0 10px;
-} 
+}
+
 /*轮播图*/
-#banner-warp{
+#banner-warp {
     margin: 0 auto;
     background-color: #ffffff;
     background-repeat: repeat;
-    .banner{
+
+    .banner {
         position: relative;
         height: 400px;
         margin: 0 auto 30px;
-    } 
-    .banner-list{
+    }
+
+    .banner-list {
         position: absolute;
         width: 100%;
         height: 400px;
         left: 0;
         top: 0;
-        li{
+
+        li {
             position: absolute;
             width: 100%;
             opacity: 0;
             z-index: -1;
-            a{
+
+            a {
                 display: block;
                 height: 400px;
                 background-position: center;
                 background-repeat: no-repeat;
-                img{
+
+                img {
                     height: 100%;
                     width: 100%;
                 }
             }
-            &.active{
+
+            &.active {
                 opacity: 1;
                 z-index: 0;
             }
         }
     }
-    .banner-btn{
+
+    .banner-btn {
         position: absolute;
         top: 354px;
         width: 100%;
         text-align: center;
-        li{
+
+        li {
             display: inline-block;
             margin: 0 4px;
             line-height: 20px;
             text-align: center;
         }
-        a{
+
+        a {
             display: block;
             width: 20px;
             height: 20px;
@@ -62,75 +76,90 @@ body{
             overflow: hidden;
             background: #fff;
         }
-        .active a{
+
+        .active a {
             background: #df3c3a;
             color: #fff;
         }
     }
-    .silde{
+
+    .silde {
         width: 175px;
         box-sizing: border-box;
         height: 400px;
         background: #3e3a39;
         color: #fff;
         position: absolute;
-        a{
+
+        a {
             color: #fff;
             font-size: 12px;
         }
+
         h2 {
             font-size: 18px;
             font-weight: normal;
             padding: 32px 16px 21px;
         }
-        .slide-icon{
+
+        .slide-icon {
             display: inline-block;
             vertical-align: -1px;
             background: url('../images/erji.png') no-repeat;
             margin-right: 5px;
         }
-        .slide-icon1{
+
+        .slide-icon1 {
             width: 16px;
             height: 15px;
         }
-        .slide-icon2{
+
+        .slide-icon2 {
             width: 16px;
             height: 10px;
             background-position: 0 -83px;
         }
-        .slide-icon3{
+
+        .slide-icon3 {
             width: 16px;
             height: 14px;
             background-position: 0 -161px;
         }
-        .slide-icon4{
+
+        .slide-icon4 {
             width: 16px;
             height: 10px;
             background-position: 0 -245px;
         }
-        .silde-warp{
-            &>li{
+
+        .silde-warp {
+            &>li {
                 padding: 0 16px;
                 font-size: 0;
-                a{
+
+                a {
                     margin-right: 10px;
                 }
-                .inner{
+
+                .inner {
                     padding-bottom: 22px;
                     padding-top: 22px;
                     border-top: 1px dotted #8a8c8c;
-                    h3{
+
+                    h3 {
                         font-size: 14px;
                         font-weight: normal;
-                        margin-bottom: 8px;   
-                        a{
+                        margin-bottom: 8px;
+
+                        a {
                             font-size: 14px;
                         }
-                    }  
-                    .list{
-                        a{
+                    }
+
+                    .list {
+                        a {
                             color: #fff;
-                            font-size: 12px;  
+                            font-size: 12px;
                         }
                     }
                 }
@@ -141,91 +170,109 @@ body{
 
 
 /*下面的模块*/
-#mod{
-    
+#mod {
+
     height: 697px;
-    h2{
+
+    h2 {
         font-size: 19px;
         margin-bottom: 15px;
         font-weight: normal;
         color: #3e3a39;
-        .left{
+
+        .left {
             float: left;
-            i{
+
+            i {
                 display: inline-block;
                 width: 10px;
                 height: 16px;
                 margin-right: 11px;
                 background: #e73736;
             }
-            span{
+
+            span {
                 font-size: 14px;
                 color: #666;
                 margin-left: 18px;
             }
         }
-        .right{
+
+        .right {
             font-size: 14px;
             padding-top: 5px;
-             a{
+
+            a {
                 color: #666;
-             }
-             span{
+            }
+
+            span {
                 margin: 0 10px;
                 color: #ddd;
-             }
+            }
         }
     }
-    .inner{
+
+    .inner {
         border: 1px solid #e5e5e5;
         margin-bottom: 30px;
-        .shop-list{
+
+        .shop-list {
             width: 949px;
             background: #fff;
-            .main-img{
+
+            .main-img {
                 position: relative;
                 width: 472px;
                 overflow: hidden;
                 height: 329px;
             }
-            .main-list{
+
+            .main-list {
                 margin-bottom: 20px;
-                ul{
+
+                ul {
                     margin-bottom: 0;
-                    li{
+
+                    li {
                         float: left;
                         border: 1px solid #fff;
                         box-shadow: 0 0 0 1px #e5e5e5;
                         background: #fff;
-                        position: relative;  
+                        position: relative;
                         padding: 18px 19px;
-                        width: 196px; 
-                        &:hover:after{
-                                content: "";
-                                border-bottom: 2px solid #e73736;
-                                position: absolute;
-                                left: -1px;
-                                bottom: -1px;
-                                width: 101%;
-                                z-index: 1;
+                        width: 196px;
+
+                        &:hover:after {
+                            content: "";
+                            border-bottom: 2px solid #e73736;
+                            position: absolute;
+                            left: -1px;
+                            bottom: -1px;
+                            width: 101%;
+                            z-index: 1;
                         }
                     }
-                    .article-img{
+
+                    .article-img {
                         text-align: center;
                         position: relative;
                         font-size: 0;
                         height: 196px;
                         margin-bottom: 17px;
-                        a{
+
+                        a {
                             display: inline-block;
                             vertical-align: middle;
-                            img{
+
+                            img {
                                 max-width: 196px;
-                                max-height: 196px; 
-                            }  
+                                max-height: 196px;
+                            }
                         }
                     }
-                    .article-des{
+
+                    .article-des {
                         margin-bottom: 13px;
                         font-size: 14px;
                         line-height: 21px;
@@ -233,24 +280,29 @@ body{
                         overflow: hidden;
                         font-weight: normal;
                     }
-                    .article-price{
-                        .price{
+
+                    .article-price {
+                        .price {
                             color: #dc3334;
                             padding-top: 4px;
-                            img{
+
+                            img {
                                 width: 14px;
                                 height: 14px;
                                 vertical-align: 0;
                                 margin-right: 7px;
                             }
-                            span{
+
+                            span {
                                 font-size: 14px;
                             }
-                            b{
+
+                            b {
                                 font-size: 17px;
                                 font-weight: 400;
                             }
-                            s{
+
+                            s {
                                 font-size: 12px;
                                 color: #999;
                             }
@@ -259,76 +311,92 @@ body{
                 }
             }
         }
-        .shop-rank{
+
+        .shop-rank {
             overflow: hidden;
             padding: 28px 20px 0;
             background: #fff;
-            h3{
+
+            h3 {
                 font-size: 16px;
                 color: #666;
                 font-weight: normal;
                 margin-bottom: 27px;
             }
-            li{
+
+            li {
                 padding: 23px 0;
                 border-top: 1px solid #e5e5e5;
                 position: relative;
             }
-            .rank-icon{
+
+            .rank-icon {
                 width: 44px;
                 height: 38px;
                 position: absolute;
                 left: 0;
                 top: 7px;
             }
-            .rank-icon1{
+
+            .rank-icon1 {
                 background: url('../images/paiming.png') no-repeat;
             }
+
             .rank-icon2 {
                 background: url('../images/paiming.png') no-repeat;
                 background-position: left -120px;
             }
-            .rank-icon3{
+
+            .rank-icon3 {
                 background: url('../images/paiming.png') no-repeat;
                 background-position: left -238px;
             }
-            .rank-img{
+
+            .rank-img {
                 width: 70px;
                 text-align: center;
                 margin-right: 22px;
-                img{
+
+                img {
                     display: block;
                     max-width: 70px;
                     height: 70px;
                 }
             }
-            .rank-detail{
+
+            .rank-detail {
                 overflow: hidden;
-                h4{
+
+                h4 {
                     font-size: 14px;
                     line-height: 20px;
                     margin-bottom: 14px;
                     font-weight: normal;
                 }
-                .nprice{
+
+                .nprice {
                     font-size: 14px;
                     color: #dc3334;
-                    b{
+
+                    b {
                         font-weight: 400;
                         font-size: 17px;
                     }
                 }
-                .oprice{
-                    
+
+                .oprice {
+
                     font-size: 12px;
                     color: #999;
                 }
-                s{
+
+                s {
                     margin-left: 8px;
                 }
-                span{
+
+                span {
                     font-size: 14px;
-                    
+
                 }
             }
         }

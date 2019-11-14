@@ -23,7 +23,15 @@ li {
   border: 0;
 }
 
-.btn-black, .btn-cart, .btn-danger, .btn-dashed, .btn-disable, .btn-normal, .btn-soon, .btn-success, .btn-warnning {
+.btn-black,
+.btn-cart,
+.btn-danger,
+.btn-dashed,
+.btn-disable,
+.btn-normal,
+.btn-soon,
+.btn-success,
+.btn-warnning {
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
@@ -33,7 +41,47 @@ li {
   line-height: 36px;
 }
 
-.btn-buy, .btn-more {
+.btn-small {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.btn-danger {
+  color: #fff !important;
+  background: #E73736;
+  border: 1px solid #dc3334;
+}
+
+.btn-num {
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #C6C6C6;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+}
+
+.btn-num a {
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #999;
+}
+
+.btn-num input {
+  width: 49px;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  text-align: center;
+  padding: 0;
+}
+
+.btn-buy,
+.btn-more {
   width: 247px;
   height: 55px;
   line-height: 53px;
@@ -49,12 +97,13 @@ li {
 }
 
 body {
-  font: 12px/1.14 Arial,PingHei,"微软雅黑",tahoma,STHeitiSC-Light,"Helvetica Neue",Helvetica,sans-serif;
+  font: 12px/1.14 Arial, PingHei, "微软雅黑", tahoma, STHeitiSC-Light, "Helvetica Neue", Helvetica, sans-serif;
   min-width: 1280px;
   background: #f5f5f5;
 }
 
-.ellipsis2, .ellipsis3 {
+.ellipsis2,
+.ellipsis3 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -72,7 +121,8 @@ body {
   zoom: 1;
 }
 
-.clearfix:after, .clearfix::before {
+.clearfix:after,
+.clearfix::before {
   content: '';
   display: table;
 }
@@ -86,6 +136,12 @@ body {
   display: inline-block;
   vertical-align: middle;
   background: url("../images/icon.png") no-repeat;
+}
+
+.icon101 {
+  width: 112px;
+  height: 112px;
+  background-position: -578px -334px;
 }
 
 .left {
@@ -264,7 +320,8 @@ header .buycart a .cart-item .header-icon::before {
   height: 1.0833333333333333em;
 }
 
-header .buycart a .cart-item, header .buycart a .cart-num {
+header .buycart a .cart-item,
+header .buycart a .cart-num {
   display: inline-block;
   height: 35px;
   text-align: center;
@@ -319,7 +376,8 @@ nav ul li a {
   box-sizing: border-box;
 }
 
-nav .left-ul .active a, nav .left-ul a:hover {
+nav .left-ul .active a,
+nav .left-ul a:hover {
   color: #E73736;
   border-bottom: 3px solid #E73736;
 }
@@ -357,6 +415,215 @@ nav .right-ul .hang:before {
 
 nav .right-ul .kuai:before {
   background-position: -.8333333333333334em -19em;
+}
+
+footer .footer-icon {
+  font-size: 12px;
+}
+
+footer .footer-icon::before {
+  content: ' ';
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("../images/footer.svg");
+  background-repeat: no-repeat;
+  background-size: 13.916666666666666em 42.916666666666664em;
+}
+
+footer .icon-earth {
+  margin-right: 25px;
+}
+
+footer .icon-earth::before {
+  background-position: -.69em -9.6968em;
+  width: 3.0833333333333335em;
+  height: 3em;
+}
+
+footer .icon-cart {
+  margin-right: 20px;
+}
+
+footer .icon-cart::before {
+  background-position: -.7em -4.4999em;
+  width: 3em;
+  height: 3.3333333333333335em;
+}
+
+footer .icon-list {
+  margin-right: 7px;
+}
+
+footer .icon-list::before {
+  background-position: -0.67em -14.5em;
+  width: 2.25em;
+  height: 2.75em;
+}
+
+footer .icon-car {
+  margin-right: 24px;
+}
+
+footer .icon-car::before {
+  background-position: -.703em -.0333334em;
+  width: 3.3333333333333335em;
+  height: 2.5833333333333335em;
+}
+
+footer .icon-package {
+  margin-right: 18px;
+}
+
+footer .icon-package::before {
+  background-position: -.6333333333333334em -31.066667em;
+  width: 3em;
+  height: 2.75em;
+}
+
+footer .icon-logo {
+  margin-right: 11px;
+}
+
+footer .icon-logo::before {
+  background-position: -.0333333333333334em -24.25em;
+  width: 13.166667em;
+  height: 5.75em;
+}
+
+footer .icon-sina {
+  margin-right: 14px;
+}
+
+footer .icon-sina::before {
+  background-position: -0.693333em -40.216667em;
+  width: 2.6666666666666665em;
+  height: 2.6666666666666665em;
+}
+
+footer .icon-wechat {
+  margin-right: 14px;
+}
+
+footer .icon-wechat::before {
+  background-position: -.6333333333333334em -35.683333333333336em;
+  width: 2.6666666666666665em;
+  height: 2.6666666666666665em;
+}
+
+footer .footer-top {
+  height: 54px;
+  line-height: 54px;
+  padding: 13px 0;
+  background: #3E3A39;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .footer-top li {
+  float: left;
+  width: 235px;
+  text-align: center;
+  border-left: 1px solid #635D5C;
+  margin-left: -1px;
+}
+
+footer .footer-bottom {
+  background: #F1F1F1;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+
+footer .footer-bottom a {
+  font-size: 12px;
+  color: #999;
+}
+
+footer .footer-bottom img {
+  display: none;
+  position: absolute;
+  top: -119px;
+  left: -38px;
+}
+
+footer .footer-bottom .warp {
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+footer .footer-bottom .bottom1 {
+  margin-right: 88px;
+}
+
+footer .footer-bottom .bottom1 a {
+  position: relative;
+}
+
+footer .footer-bottom .bottom1 span {
+  margin-right: 14px;
+}
+
+footer .footer-bottom .bottom1 p {
+  margin-top: 14px;
+  color: #3E3A39;
+  font-size: 12px;
+}
+
+footer .footer-bottom .bottom1 p img {
+  top: -129px;
+}
+
+footer .footer-bottom .bottom2 {
+  margin-left: -98px;
+}
+
+footer .footer-bottom .bottom2 dl {
+  float: left;
+  margin-left: 98px;
+}
+
+footer .footer-bottom .bottom2 dl dt {
+  font-size: 14px;
+  color: #3E3A39;
+  margin-bottom: 22px;
+}
+
+footer .footer-bottom .bottom2 dl dd {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
+
+footer .footer-bottom .bottom3 {
+  margin-right: 16px;
+  text-align: center;
+  position: relative;
+}
+
+footer .footer-bottom .bottom3 img {
+  display: block;
+  margin-top: 10px;
+  position: sticky;
+}
+
+footer .footer-bottom .certificate,
+footer .footer-bottom .copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+footer .footer-bottom .certificate img,
+footer .footer-bottom .copyright img {
+  display: inline-block;
+  position: sticky;
+}
+
+footer .footer-bottom .certificate {
+  margin: 5px;
+}
+
+footer .footer-bottom .certificate a {
+  margin: 0 5px;
 }
 
 body {

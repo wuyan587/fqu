@@ -1,8 +1,9 @@
-@import './public';
-footer{
-    .footer-icon{
+
+footer {
+    .footer-icon {
         font-size: 12px;
-        &::before{
+
+        &::before {
             content: ' ';
             vertical-align: middle;
             display: inline-block;
@@ -11,59 +12,201 @@ footer{
             background-size: 13.916666666666666em 42.916666666666664em;
         }
     }
-    .icon-earth{
+
+    .icon-earth {
         margin-right: 25px;
-        &::before{
-            background-position: -.8333333333333334em -10.083333333333334em;
+
+        &::before {
+            background-position: -.69em -9.6968em;
             width: 3.0833333333333335em;
             height: 3em;
         }
     }
-    .icon-cart{
+
+    .icon-cart {
         margin-right: 20px;
-        &::before{
-                background-position: -.7em -4.4999em;
-                width: 3em;
-                height: 3.3333333333333335em;
+
+        &::before {
+            background-position: -.7em -4.4999em;
+            width: 3em;
+            height: 3.3333333333333335em;
         }
     }
-    .icon-list{
+
+    .icon-list {
         margin-right: 7px;
-        &::before{
-            background-position: -.8333333333333334em -14.75em;
+
+        &::before {
+            background-position: -0.67em -14.5em;
             width: 2.25em;
             height: 2.75em;
         }
     }
-    .icon-car{
+
+    .icon-car {
         margin-right: 24px;
-        &::before{
-                background-position: -.8333333333333334em -.8333333333333334em;
-                width: 3.3333333333333335em;
-                height: 2.5833333333333335em;
+
+        &::before {
+            background-position: -.703em -.0333334em;
+            width: 3.3333333333333335em;
+            height: 2.5833333333333335em;
         }
     }
-    .icon-package{
+
+    .icon-package {
         margin-right: 18px;
-        &::before{
-                background-position: -.8333333333333334em -30.666666666666664em;
-                width: 3em;
-                height: 2.75em;
+
+        &::before {
+            background-position: -.6333333333333334em -31.066667em;
+            width: 3em;
+            height: 2.75em;
         }
     }
-    .footer-top{
+
+    .icon-logo {
+        margin-right: 11px;
+
+        &::before {
+            background-position: -.0333333333333334em -24.25em;
+            width: 13.166667em;
+            height: 5.75em;
+        }
+    }
+
+    .icon-sina {
+        margin-right: 14px;
+
+        &::before {
+            background-position: -0.693333em -40.216667em;
+            width: 2.6666666666666665em;
+            height: 2.6666666666666665em;
+        }
+    }
+
+    .icon-wechat {
+        margin-right: 14px;
+
+        &::before {
+            background-position: -.6333333333333334em -35.683333333333336em;
+            width: 2.6666666666666665em;
+            height: 2.6666666666666665em;
+        }
+    }
+
+    .footer-top {
         height: 54px;
         line-height: 54px;
         padding: 13px 0;
         background: #3E3A39;
         color: #fff;
         font-size: 14px;
-        li{
+
+        li {
             float: left;
             width: 235px;
             text-align: center;
             border-left: 1px solid #635D5C;
             margin-left: -1px;
+        }
+    }
+
+    .footer-bottom {
+        background: #F1F1F1;
+        font-size: 14px;
+        padding-bottom: 25px;
+
+        a {
+            font-size: 12px;
+            color: #999;
+        }
+
+        img {
+            display: none;
+            position: absolute;
+            top: -119px;
+            left: -38px;
+        }
+
+        .warp {
+            padding-top: 29px;
+            padding-bottom: 30px;
+        }
+
+        .bottom1 {
+            margin-right: 88px;
+
+            a {
+                position: relative;
+            }
+
+            span {
+                margin-right: 14px;
+            }
+
+            p {
+                margin-top: 14px;
+                color: #3E3A39;
+                font-size: 12px;
+
+                img {
+                    top: -129px;
+                }
+            }
+        }
+
+        .bottom2 {
+            margin-left: -98px;
+
+            dl {
+                float: left;
+                margin-left: 98px;
+
+                dt {
+                    font-size: 14px;
+                    color: #3E3A39;
+                    margin-bottom: 22px;
+                }
+
+                dd {
+                    font-size: 12px;
+                    color: #999;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+
+        .bottom3 {
+            margin-right: 16px;
+            text-align: center;
+            position: relative;
+
+            img {
+                display: block;
+                margin-top: 10px;
+                position: sticky;
+            }
+        }
+
+        .certificate,
+        .copyright {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+
+            img {
+                display: inline-block;
+                position: sticky;
+            }
+        }
+
+        .certificate {
+            margin: 5px;
+
+            a {
+                margin: 0 5px;
+
+            }
         }
     }
 }

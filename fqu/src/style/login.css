@@ -157,3 +157,128 @@ body {
   margin: 0 auto;
   position: relative;
 }
+
+.login {
+  width: 520px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -260px;
+  margin-top: -241px;
+  border-radius: 3px;
+  z-index: 3;
+}
+
+.login .title {
+  border-top: 3px solid #DD3E42;
+}
+
+.login .inner {
+  width: 520px;
+  height: 420px;
+  background: #fff;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  margin-left: -260px;
+  box-sizing: border-box;
+  padding: 53px 50px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-top: 0px;
+  margin-top: -237px;
+}
+
+.login h2 {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.login h2 span {
+  display: inline-block;
+  font-size: 16px;
+  color: #DD3E42;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DD3E42;
+}
+
+.login li {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.login li .error {
+  background: #fff;
+  position: absolute;
+  margin-top: -7px;
+  margin-left: 15px;
+  padding: 0 5px;
+  color: #dc3334;
+}
+
+.login input {
+  vertical-align: middle;
+  padding: 12px 0 12px 16px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  color: #999;
+  width: 100%;
+  height: 54px;
+  box-sizing: border-box;
+}
+
+.login .login-btn {
+  margin-top: 20px;
+  color: #999;
+  display: table;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.login .login-btn div {
+  display: table-cell;
+}
+
+.login .login-btn .btn {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+}
+
+.login .login-btn a {
+  color: #dc3334;
+}
+
+.login .login-style {
+  text-align: center;
+}
+
+.login .login-style button {
+  font-size: 12px;
+  background: none;
+  border: 0;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.login .login-style .wechat::before {
+  content: ' ';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  background: url("../images/wechat.png") no-repeat;
+  background-size: contain;
+}
+
+.login .login-style .alipay::before {
+  content: ' ';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  background: url("../images/alipay.png") no-repeat;
+  background-size: contain;
+}
