@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,75 +8,78 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/cart.css">
+    <script src="script/require.js" defer async="true" data-main="script/config.js" id="current-page" current-page ="cart" target-module="cart"></script>
+
 </head>
+
 <body>
-        <div id="top">
-                <div class="warp">
-                    <div class="left">
-                        <a href="javascript:;">海淘首页</a>
-                        <a href="javascript:;">登陆</a>
-                        <a href="javascript:;">注册</a>
+    <div id="top">
+        <div class="warp">
+            <div class="left">
+                <a href="javascript:;">海淘首页</a>
+                <a href="javascript:;">登陆</a>
+                <a href="javascript:;">注册</a>
+            </div>
+            <div class="right">
+                <a href="javascript:;">下载丰趣海淘app</a>
+                <a href="javascript:;">我的订单</a>
+                <a href="javascript:;">个人中心</a>
+                <a href="javascript:;">联系客服</a>
+                <a href="javascript:;">关注我们</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="warp clearfix">
+            <div class="left">
+                <a href="javascript:;">
+                    <i></i>
+                </a>
+            </div>
+            <div class="right">
+                <div class="search ">
+                    <div class="search-box .clearfix">
+                        <input type="text">
+                        <a href="javascript:;">搜索</a>
                     </div>
-                    <div class="right">
-                        <a href="javascript:;">下载丰趣海淘app</a>
-                        <a href="javascript:;">我的订单</a>
-                        <a href="javascript:;">个人中心</a>
-                        <a href="javascript:;">联系客服</a>
-                        <a href="javascript:;">关注我们</a>
-                    </div>
+                    <ul>
+                        <li><a href="">奶粉</a></li>
+                        <li><a href="">面膜</a></li>
+                        <li><a href="">纸尿裤</a></li>
+                        <li><a href="">乐而雅</a></li>
+                        <li><a href="">防晒</a></li>
+                        <li><a href="">爽肤水</a></li>
+                        <li><a href="">Skin</a></li>
+                        <li><a href="">DHC</a></li>
+
+                    </ul>
+                </div>
+                <div class="buycart">
+                    <a href="">
+                        <span class="cart-num">
+                            <span class="header-icon"></span>
+                            <span class="num">0</span>
+                        </span>
+                        <span class="cart-item">
+                            去购物车结算
+                            <span class="header-icon">
+
+                            </span>
+                        </span>
+                    </a>
                 </div>
             </div>
-            <header>
-                <div class="warp clearfix">
-                    <div class="left">
-                        <a href="javascript:;">
-                            <i></i>
-                        </a>
-                    </div>
-                    <div class="right">
-                        <div class="search ">
-                            <div class="search-box .clearfix">
-                                <input type="text">
-                                <a href="javascript:;">搜索</a>
-                            </div>
-                            <ul>
-                                <li><a href="">奶粉</a></li>
-                                <li><a href="">面膜</a></li>
-                                <li><a href="">纸尿裤</a></li>
-                                <li><a href="">乐而雅</a></li>
-                                <li><a href="">防晒</a></li>
-                                <li><a href="">爽肤水</a></li>
-                                <li><a href="">Skin</a></li>
-                                <li><a href="">DHC</a></li>
-        
-                            </ul>
-                        </div>
-                        <div class="buycart">
-                            <a href="">
-                                <span class="cart-num">
-                                    <span class="header-icon"></span>
-                                    <span class="num">0</span>
-                                </span>
-                                <span class="cart-item">
-                                    去购物车结算
-                                    <span class="header-icon">
-        
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
+        </div>
+    </header>
     <section>
         <div class="warp">
             <div class="cart-none">
                 <span class="icon icon101"></span>
                 <div class="cartnone-info">
-                        购物车空空如也
-                        <a href="" class="btn btn-danger btn-small">
-                                去逛逛吧~~
-                        </a>
+                    购物车空空如也
+                    <a href="" class="btn btn-danger btn-small">
+                        去逛逛吧~~
+                    </a>
                 </div>
             </div>
             <div class="cart-list">
@@ -83,7 +87,7 @@
                     <thead>
                         <tr>
                             <th class="th1">
-                                <input type="checkbox" class="all-select">全选
+                                <input type="checkbox" class="all-select" checked>全选
                             </th>
                             <th class="th2">商品信息</th>
                             <th class="th3">单价（元）</th>
@@ -99,13 +103,13 @@
                             </td>
                         </tr>
                     </tbody>
-                    <tbody>
+                    <!-- <tbody>
                         <tr>
                             <td class="td1">
                                 <div class="cart-pos">
-                                    <input type="checkbox" name="" id="">
+                                    <input type="checkbox" class='select' name="" id="">
                                     <a href="">
-                                        <img src="https://img0.fengqucdn.com/sf/skuInfos/1517751/4a501a366d5cab95bbeb32439635a585.jpeg" alt="">
+                                        <img src="" alt="">
                                     </a>
                                 </div>
                             </td>
@@ -121,10 +125,10 @@
                             <td class="td4">
                                 <div>
                                     <span class="btn btn-num">
-                                        <a href="" class="del">-</a>
-                                        <a href="" class="add">+</a>
+                                        <a href="javascript:;" class="del">-</a>
+                                        <a href="javascript:;" class="add">+</a>
                                         <input type="text" class="num-input" value="1">
-                                        
+
                                     </span>
                                 </div>
                             </td>
@@ -132,82 +136,82 @@
                                 <b class="price">198</b>
                             </td>
                             <td class="td6">
-                                <a href="" class="delete icon icon72">删除</a>
+                                <a href="javascript:;" class="delete icon icon72">删除</a>
                             </td>
                         </tr>
                     </tbody>
                     <tbody>
-                            <tr>
-                                <td class="td1">
-                                    <div class="cart-pos">
-                                        <input type="checkbox" name="" id="">
-                                        <a href="">
-                                            <img src="https://img0.fengqucdn.com/sf/skuInfos/1517751/4a501a366d5cab95bbeb32439635a585.jpeg" alt="">
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="td2">
-                                    <h2>
-                                        <a href="">澳大利亚Enervite澳乐维他 葡萄籽 180粒</a>
-                                    </h2>
-                                    <div class="cart-detail">包装规格:180粒/瓶</div>
-                                </td>
-                                <td class="td3">
-                                    <b>198</b>
-                                </td>
-                                <td class="td4">
-                                    <div>
-                                        <span class="btn btn-num">
-                                            <a href="" class="del">-</a>
-                                            <a href="" class="add">+</a>
-                                            <input type="text" class="num-input" value="1">
-                                            
-                                        </span>
-                                    </div>
-                                </td>
-                                <td class="td5">
-                                    <b class="price">198</b>
-                                </td>
-                                <td class="td6">
-                                    <a href="" class="delete icon icon72">删除</a>
-                                </td>
-                            </tr>
-                        </tbody>
+                        <tr>
+                            <td class="td1">
+                                <div class="cart-pos">
+                                    <input type="checkbox" class='select' name="" id="">
+                                    <a href="">
+                                        <img src="" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="td2">
+                                <h2>
+                                    <a href="">澳大利亚Enervite澳乐维他 葡萄籽 180粒</a>
+                                </h2>
+                                <div class="cart-detail">包装规格:180粒/瓶</div>
+                            </td>
+                            <td class="td3">
+                                <b>198</b>
+                            </td>
+                            <td class="td4">
+                                <div>
+                                    <span class="btn btn-num">
+                                        <a href="javascript:;" class="del">-</a>
+                                        <a href="javascript:;" class="add">+</a>
+                                        <input type="text" class="num-input" value="1">
+
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="td5">
+                                <b class="price">198</b>
+                            </td>
+                            <td class="td6">
+                                <a href="javascript:;" class="delete icon icon72">删除</a>
+                            </td>
+                        </tr>
+                    </tbody> -->
                 </table>
             </div>
             <div class="cart-footer clearfix">
                 <div class="left">
                     <label for="alldel">
-                        <input type="checkbox" name="" id="alldel">
+                        <input type="checkbox" class="all-select" name="" id="alldel" checked>
                         全选
                     </label>
-                    <a href="" class="del-chose">删除选中商品</a>
+                    <a href="javascript:;" class="del-chose">删除选中商品</a>
                 </div>
                 <div class="right">
                     <ul>
                         <li>
                             <span class="info">实付金额满88元包邮</span>
-                            
-                        总价（不含运费）:
-                        <span class="all-price">
-                            <b>¥326</b>
-                        </span>
+
+                            总价（不含运费）:
+                            <span class="all-price">
+                                <b>¥0</b>
+                            </span>
                         </li>
                         <li>
                             <span style="padding-right:10px;">
-                                    已选商品&nbsp;
-                                    <i class="chose-num">2</i> 
-                                    &nbsp;件
+                                已选商品&nbsp;
+                                <i class="chose-num">0</i>
+                                &nbsp;件
                             </span>
-                            
+
                             已节省:
                             <span class="save">
-                                    ¥ 0
+                                ¥ 0
                             </span>
                         </li>
                     </ul>
                     <button class="btn btn-danger">
-                            去结算
+                        去结算
                     </button>
                     <span class="icon icon76"></span>
                     <span class="icon icon75"></span>
@@ -216,89 +220,90 @@
         </div>
     </section>
     <footer>
-            <div class="footer-top">
-                <div class="warp">
-                    <ul class="clearfix">
-                        <li><span class="footer-icon icon-earth"></span>正品原汁原味
-                        </li>
-                        <li><span class="footer-icon icon-cart"></span>国检监督入仓
-                        </li>
-                        <li><span class="footer-icon icon-list"></span>快速清关报备
-                        </li>
-                        <li><span class="footer-icon icon-car"></span>国内物流配送
-                        </li>
-                        <li><span class="footer-icon icon-package"></span>用户收货确认
-                        </li>
-                    </ul>
+        <div class="footer-top">
+            <div class="warp">
+                <ul class="clearfix">
+                    <li><span class="footer-icon icon-earth"></span>正品原汁原味
+                    </li>
+                    <li><span class="footer-icon icon-cart"></span>国检监督入仓
+                    </li>
+                    <li><span class="footer-icon icon-list"></span>快速清关报备
+                    </li>
+                    <li><span class="footer-icon icon-car"></span>国内物流配送
+                    </li>
+                    <li><span class="footer-icon icon-package"></span>用户收货确认
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="warp clearfix">
+                <div class="bottom1 left">
+                    <span class="footer-icon icon-logo"></span>
+                    <p>
+                        <span>关注我们</span>
+                        <a href="">
+                            <span class="footer-icon icon-sina"></span>
+                            <img src="./images/sinaerwei.png" alt="">
+                        </a>
+                        <a href="">
+                            <span class="footer-icon icon-wechat"></span>
+                            <img src="./images/wechaterwei.png" alt="">
+                        </a>
+                    </p>
+                </div>
+                <div class="bottom2 left">
+                    <dl>
+                        <dt>丰趣海淘</dt>
+                        <dd><a href="">关于我们</a></dd>
+                        <dd><a href="">法律政策</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>新手指南</dt>
+                        <dd><a href="">正品保证</a></dd>
+                        <dd><a href="">购物指南</a></dd>
+                        <dd><a href="">费用说明</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>帮助中心</dt>
+                        <dd><a href="">签收说明</a></dd>
+                        <dd><a href="">运输时效</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>联系我们</dt>
+                        <dd><a href="">在线客服 (周一至周日 9:00 - 21:00)</a></dd>
+                        <dd><a href="">客服中心</a></dd>
+                        <dd><a href="">加入我们</a></dd>
+                    </dl>
+                </div>
+                <div class="bottom3 right">
+                    <p>扫一扫下载App</p>
+                    <div>
+                        <img src="./images/ew.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="warp clearfix">
-                    <div class="bottom1 left">
-                        <span class="footer-icon icon-logo"></span>
-                        <p>
-                            <span>关注我们</span>
-                            <a href="">
-                                <span class="footer-icon icon-sina"></span>
-                                <img src="./images/sinaerwei.png" alt="">
-                            </a>
-                            <a href="">
-                                <span class="footer-icon icon-wechat"></span>
-                                <img src="./images/wechaterwei.png" alt="">
-                            </a>
-                        </p>
-                    </div>
-                    <div class="bottom2 left">
-                        <dl>
-                            <dt>丰趣海淘</dt>
-                            <dd><a href="">关于我们</a></dd>
-                            <dd><a href="">法律政策</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>新手指南</dt>
-                            <dd><a href="">正品保证</a></dd>
-                            <dd><a href="">购物指南</a></dd>
-                            <dd><a href="">费用说明</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>帮助中心</dt>
-                            <dd><a href="">签收说明</a></dd>
-                            <dd><a href="">运输时效</a></dd>
-                        </dl>
-                        <dl>
-                            <dt>联系我们</dt>
-                            <dd><a href="">在线客服 (周一至周日 9:00 - 21:00)</a></dd>
-                            <dd><a href="">客服中心</a></dd>
-                            <dd><a href="">加入我们</a></dd>
-                        </dl>
-                    </div>
-                    <div class="bottom3 right">
-                        <p>扫一扫下载App</p>
-                        <div>
-                            <img src="./images/ew.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <p class="copyright">
-                    Copyright © 2016 FengQ.All Rights Reserved | 
-                    <a href="">沪ICP备15040786号-3</a>
-                    上海牵趣网络科技有限公司 版权所有
-                </p>
-                <p class="certificate">
-                    <a href="">跨境电子商务企业海关注册登记证</a>|<a href="">
-                        食品经营许可证
-                    </a>
-                    |
-                  <a href="">
-                      
+            <p class="copyright">
+                Copyright © 2016 FengQ.All Rights Reserved |
+                <a href="">沪ICP备15040786号-3</a>
+                上海牵趣网络科技有限公司 版权所有
+            </p>
+            <p class="certificate">
+                <a href="">跨境电子商务企业海关注册登记证</a>|<a href="">
+                    食品经营许可证
+                </a>
+                |
+                <a href="">
+
                     营业执照
-                  
-                  </a>  
-                </p>
-                <p class="copyright">
-                    <a href=""><img src="./images/gs.png" alt=""></a><a href=""><img src="./images/wg.png" alt=""></a>
-                </p>
-            </div>
-        </footer>
+
+                </a>
+            </p>
+            <p class="copyright">
+                <a href=""><img src="./images/gs.png" alt=""></a><a href=""><img src="./images/wg.png" alt=""></a>
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>

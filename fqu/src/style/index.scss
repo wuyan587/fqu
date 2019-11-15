@@ -173,7 +173,7 @@ body {
 #mod {
 
     height: 697px;
-
+    margin-bottom: 30px;
     h2 {
         font-size: 19px;
         margin-bottom: 15px;
@@ -226,6 +226,10 @@ body {
                 width: 472px;
                 overflow: hidden;
                 height: 329px;
+                img{
+                    width: 472px;
+                    height: 329px;
+                }
             }
 
             .main-list {

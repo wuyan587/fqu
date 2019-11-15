@@ -791,6 +791,7 @@ body {
 /*下面的模块*/
 #mod {
   height: 697px;
+  margin-bottom: 30px;
 }
 
 #mod h2 {
@@ -846,6 +847,11 @@ body {
   position: relative;
   width: 472px;
   overflow: hidden;
+  height: 329px;
+}
+
+#mod .inner .shop-list .main-img img {
+  width: 472px;
   height: 329px;
 }
 

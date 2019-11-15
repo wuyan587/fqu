@@ -643,7 +643,8 @@ section .btn {
   position: relative;
 }
 
-section .btn-cart, section .btn-soon {
+section .btn-cart,
+section .btn-soon {
   background: #ff8140;
   color: #fff !important;
   border: 1px solid #ff9000;
@@ -694,6 +695,11 @@ section .fdj-list li img {
   vertical-align: middle;
 }
 
+section .fdj-list .active {
+  border: 1px solid #dc3334;
+  outline: 1px solid #dc3334;
+}
+
 section .fdj-list span {
   height: 100%;
   width: 0;
@@ -719,6 +725,7 @@ section .fdj-warp .fdj {
   border: 1px solid #eee;
   text-align: center;
   font-size: 0;
+  overflow: hidden;
 }
 
 section .fdj-warp img {
