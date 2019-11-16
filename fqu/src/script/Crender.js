@@ -4,7 +4,7 @@ define([
     'jqcookie',
     
 ], function(a1) {
-    var burl = 'http://127.0.0.1/fqu/fqu/fqu/php/',
+    var burl = 'http://10.31.154.141/fqu/fqu/fqu/php/',
         str = '';
     function render(){
         if(!$.cookie('shop'))

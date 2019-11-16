@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/login.css">
+    <script src="script/require.js" defer async="true" data-main="script/config.js" id="current-page" current-page ="login" target-module="login"></script>
+
 </head>
 <body>
     <div class="login">
@@ -20,11 +22,11 @@
                 <ul>
                     <li>
                         <input type="text" class="username" placeholder="手机号/邮箱">
-                        <div class="error">请输入丰趣海淘帐号</div>
+                        <div class="username-error error">请输入丰趣海淘帐号</div>
                     </li>
                     <li>
                             <input type="text" class="password" placeholder="密码">
-                            <div class="error">密码不能为空</div>
+                            <div class="password-error error">密码不能为空</div>
                         </li>
                 </ul>
                 <div class="login-btn">
@@ -32,7 +34,7 @@
                             登录
                     </button>
                     不是会员？
-                    <a href="">
+                    <a href="http://10.31.154.141/fqu/fqu/fqu/src/register.html">
                         去注册
                     </a></div>
                    

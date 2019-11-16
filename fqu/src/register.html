@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/register.css">
+    <script src="script/require.js" defer async="true" data-main="script/config.js" id="current-page" current-page ="register" target-module="register"></script>
 </head>
 <body>
         <div class="register">
@@ -19,10 +20,11 @@
                         </h2>
                         <ul>
                             <li>
-                                <input type="text" class="username" placeholder="手机号/邮箱">
-                                <input type="text" class="yzm" placeholder="验证码">
-                                <img src="https://checkcode1.fengqu.com/get.do?type=reg&sessionID=8be02a14795771dd6a09934815c8a72b" alt="" class="yzimg">
+                                <input type="text" class="username" placeholder="手机号">
                                 <div class="username-error error">请输入您的手机号码</div>
+                                <input type="text" class="yzm" placeholder="验证码">
+                                <img src="https://checkcode1.fengqu.com/get.do?type=reg&sessionID=e96b2ae676c49c666d3747ed300d1fb7" alt="" class="yzimg">
+                                
                                 <div class="yzm-error error">请输入图片验证码</div>
                             </li>
                             <li>
@@ -32,7 +34,7 @@
                                 </li>
                             <li>
                                     <input type="text" class="password" placeholder="设置6-18位字母、数字或标点符号的密码">
-                                    <div class="error">请设置登录密码</div>
+                                    <div class="password-error error">请设置登录密码</div>
                                 </li>
                         </ul>
                         <div class="register-btn">
@@ -44,7 +46,7 @@
                            
                             <div class="right">
                                     已有账户？
-                                <a href="">
+                                <a href="http://10.31.154.141/fqu/fqu/fqu/src/login.html">
                                         去登录
                                 </a>
                             </div>

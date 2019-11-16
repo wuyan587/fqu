@@ -2,7 +2,7 @@ define([
     'jquery',
     'jqcookie'
 ], function() {
-    var burl = 'http://127.0.0.1/fqu/fqu/fqu/php/';
+    var burl = 'http://10.31.154.141/fqu/fqu/fqu/php/';
     function render(){
         $.ajax({
             type: 'get',
@@ -21,6 +21,7 @@ define([
             $('.fdj img').attr('src',data.url);
             $('.country').html(`${data.country}品牌`);
             $('.from img').attr('src',data.countryicon)
+            $('title').html(data.title);
             let str='';
             let flag=true;
             for(let v of data.urls.split(',')){

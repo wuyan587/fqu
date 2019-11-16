@@ -6,6 +6,7 @@ define([
         function init(){
             change();
             event();
+            $('.footer-warp').load('./foot.html');
         }
         function change(){
             if($.cookie('shop')){
@@ -51,7 +52,6 @@ define([
             
             if(ashop.length==0)
                 $.cookie('shop','');
-                console.log(ashop);
         }
         function price(obj) {
             let sprice = 0;

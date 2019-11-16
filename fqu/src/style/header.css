@@ -179,7 +179,6 @@ header .buycart a .cart-num:before {
 nav {
   background: white;
   padding-top: 18px;
-  height: 36px;
 }
 
 nav .header-icon {
@@ -196,6 +195,18 @@ nav .header-icon::before {
   background-image: url("../images/header.png");
   background-repeat: no-repeat;
   background-size: 17.75em 49.083333333333336em;
+}
+
+nav .header-icon-nav::before {
+  background-position: -.8333333333333334em -22.3em;
+  width: 12.383333em;
+  height: 3.833333em;
+}
+
+nav .cart-black:before {
+  background-position: -.8333333333333334em -12.25em;
+  width: 1.8333333333333333em;
+  height: 1.5833333333333333em;
 }
 
 nav ul {
@@ -215,6 +226,23 @@ nav ul li a {
   height: 37px;
   line-height: 37px;
   box-sizing: border-box;
+}
+
+nav ul .nav-img {
+  margin-right: 45px;
+}
+
+nav ul .nav-img a:hover {
+  border-bottom: none;
+}
+
+nav .nav-fixed-cart {
+  float: right;
+  background: #eee;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 13px;
+  padding-right: 17px;
 }
 
 nav .left-ul .active a,
@@ -256,4 +284,36 @@ nav .right-ul .hang:before {
 
 nav .right-ul .kuai:before {
   background-position: -.8333333333333334em -19em;
+}
+
+.nav-fixed {
+  position: fixed;
+  left: 0;
+  top: -59px;
+  opacity: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 0;
+}
+
+.nav-fixed .cart-num-inner {
+  vertical-align: middle;
+  display: inline-block;
+  background: #E73736;
+  border-radius: 50%;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  position: static;
+  margin-left: 12px;
+  top: -16px;
+  left: 17px;
+  font-style: normal;
+}
+
+.nav-fixed a {
+  height: 48px;
+  line-height: 48px;
 }

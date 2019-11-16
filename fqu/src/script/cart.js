@@ -1,5 +1,5 @@
 define([
-    'Crender',
+    'cRender',
     'cEffect'
 ], function(a1,a2) {
 return {

@@ -215,6 +215,7 @@ body {
   margin-left: 15px;
   padding: 0 5px;
   color: #dc3334;
+  display: none;
 }
 
 .login input {
@@ -226,6 +227,15 @@ body {
   width: 100%;
   height: 54px;
   box-sizing: border-box;
+}
+
+.login input.chose {
+  border-color: #126fe9;
+}
+
+.login input.active {
+  background: #e8f0fe !important;
+  color: black !important;
 }
 
 .login .login-btn {

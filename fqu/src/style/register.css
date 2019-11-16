@@ -232,11 +232,11 @@ body {
   margin-left: 15px;
   padding: 0 5px;
   color: #dc3334;
+  display: none;
 }
 
 .register li .yzm-error {
   margin-left: 180px;
-  display: block;
 }
 
 .register input {
@@ -248,6 +248,15 @@ body {
   width: 100%;
   height: 54px;
   box-sizing: border-box;
+}
+
+.register input.chose {
+  border-color: #126fe9;
+}
+
+.register input.active {
+  background: #e8f0fe !important;
+  color: black !important;
 }
 
 .register .username {

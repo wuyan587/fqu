@@ -11,8 +11,13 @@ define([
             model();
             btn();
             buy();
-            if($.cookie('shop')) $('.cart-num .num').html(JSON.parse($.cookie('shop')).length);
-            else $('.cart-num .num').html(0);
+            info();
+            
+            $('.footer-warp').load('./foot.html');
+            $('.header-warp').load('./header.html',function(){
+                if($.cookie('shop')) $('.cart-num .num').html(JSON.parse($.cookie('shop')).length);
+                else $('.cart-num .num').html(0);
+            });
         }
         function fd(){
             fdj.bl=($('.dt').height()-$('.fdj').height())/$('.fdj').height();
@@ -35,7 +40,15 @@ define([
 
                 })
         }
-        
+        function info(){
+            $('.info-btn a').on('click',function(){
+                let index=$(this).index();
+                $(this).hide().siblings().show();
+                $('.info-msg span').eq(index).hide().siblings('.info-msg span').css('display','inline-block');
+                if(index==0) $('.info-detail').show();
+                else $('.info-detail').hide();
+                })
+        }
         function model(){
             $('.model').on('click','.list',function(){
                 $(this).addClass('chose').siblings().removeClass('chose').find('span').removeClass('icon icon23');
@@ -81,6 +94,7 @@ define([
                 }
                 $.cookie('shop',JSON.stringify(ashop));
                 $('.cart-num .num').html(JSON.parse($.cookie('shop')).length);
+                alert('添加成功');
             })
         }
         $('.fdj-list ul').on('click','li',function(){

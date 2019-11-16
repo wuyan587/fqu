@@ -1,5 +1,5 @@
-define(['jquery','jqcookie'],function(){
-    var burl = 'http://127.0.0.1/fqu/fqu/fqu/php/';
+define(['jquery','jqcookie','jqlazyload'],function(){
+    var burl = 'http://10.31.154.141/fqu/fqu/fqu/php/';
     function render(){
         $.ajax({
             type: 'get',
@@ -51,7 +51,7 @@ define(['jquery','jqcookie'],function(){
     function xrw() {
             let num = 0;
             return function xr(baseobj, obj) {
-                let url='http://127.0.0.1/fqu/fqu/fqu/src/detail.html?sid='+obj.sid;
+                let url='http://10.31.154.141/fqu/fqu/fqu/src/detail.html?sid='+obj.sid;
                 let objstr = `.${baseobj} .main-list ul`;
                 let objstr2 = `.${baseobj} .shop-rank ul`;
                 let str = $(objstr).html();
@@ -60,7 +60,7 @@ define(['jquery','jqcookie'],function(){
                     <li>
                                 <div class="article-img">
                                     <a href="${url}">
-                                        <img src="${obj.url}" alt="">
+                                        <img data-original="${obj.url}"  alt="">
                                     </a>
                                 </div>
                                 <h3 class="article-des ellipsis2">
@@ -70,7 +70,7 @@ define(['jquery','jqcookie'],function(){
                                 </h3>
                                 <div class="article-price clearfix">
                                     <div class="price left">
-                                        <img src="${obj.countryicon}" alt="">
+                                        <img data-original="${obj.countryicon}" alt="">
                                         <span>￥</span>
                                         <b class="nprice">${obj.nprice}</b>
                                         <span>
@@ -88,7 +88,7 @@ define(['jquery','jqcookie'],function(){
                             <a href="${url}">
                                 <div class="rank-icon rank-icon${num+1}"></div>
                                 <div class="rank-img left">
-                                    <img src="${obj.url}" alt="">
+                                    <img data-original="${obj.url}" alt="">
                                 </div>
                                 <div class="rank-detail">
                                     <h4 class="ellipsis">${obj.title}</h4>
@@ -111,7 +111,7 @@ define(['jquery','jqcookie'],function(){
                     str2 += ` <li class="clearfix">
                             <a href="${url}">
                                 <div class="rank-img left">
-                                    <img src="${obj.url}" alt="">
+                                    <img data-original="${obj.url}" alt="">
                                 </div>
                                 <div class="rank-detail">
                                     <h4 class="ellipsis">${obj.title}</h4>
@@ -134,6 +134,9 @@ define(['jquery','jqcookie'],function(){
                 $(objstr).html(str);
                 $(objstr2).html(str2);
                 num++;
+                $("img").lazyload({
+                    effect : "fadeIn"
+                });
             }
         }
         
